@@ -10,6 +10,7 @@
 	}
 
 	// font families
+	--ff-primary: 'DM Sans', sans-serif;
 
 	// font wieghts
 	@each $font-weight, $value in variables.$font-weights {

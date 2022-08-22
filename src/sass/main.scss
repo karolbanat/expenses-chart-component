@@ -1,2 +1,5 @@
 @use './base/root';
 @use './base/reset';
+@use './base/base';
+
+@use './utility/visually-hidden';
