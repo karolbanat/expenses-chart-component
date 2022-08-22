@@ -1,7 +1,14 @@
 body {
+	font-size: var(--fz-400);
 	font-family: var(--ff-primary);
 	font-weight: var(--fw-400);
 	background-color: var(--clr-neutral-400);
+}
+
+main {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
 }
 
 h1,

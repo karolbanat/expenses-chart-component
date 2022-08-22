@@ -1,0 +1,16 @@
+@use '../base/mixins';
+
+.expenses {
+	--max-width: 54rem;
+	--padding-inline: 1.6rem;
+	--border-radius: var(--borr-300);
+
+	display: grid;
+	gap: 1.6rem;
+	width: min(100% - 2 * var(--padding-inline), var(--max-width));
+	margin-inline: auto;
+
+	@include mixins.mq(medium) {
+		--border-radius: var(--borr-400);
+	}
+}

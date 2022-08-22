@@ -1,0 +1,25 @@
+@use '../base/mixins';
+
+.expenses-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2.4rem 2rem;
+	background-color: var(--clr-primary-400);
+	color: var(--clr-neutral-200);
+	border-radius: var(--border-radius, var(--borr-300));
+
+	&__balance {
+		display: inline-flex;
+		flex-direction: column;
+
+		& > span {
+			font-size: var(--fz-600);
+			font-weight: var(--fw-700);
+		}
+	}
+
+	@include mixins.mq(medium) {
+		padding: 3rem;
+	}
+}

@@ -28,64 +28,62 @@
     <main>
         <h1 class="visually-hidden">Check your expenses</h1>
         <section aria-label="Expenses"
-                 class="expense">
-            <header class="expense-header">
-                <p class="expense-header__balance">My balance <span>$921.48</span></p>
+                 class="expenses">
+            <header class="expenses-header">
+                <p class="expenses-header__balance">My balance <span>$921.48</span></p>
                 <img src="./dist/images/logo.svg"
                      alt="">
             </header>
-            <article class="expense-data">
-                <h2 class="expense-data__heading">Spending - Last 7 days</h2>
+            <article class="expenses-data">
+                <h2 class="expenses-data__heading">Spending - Last 7 days</h2>
                 <section>
-                    <ul class="expense-chart">
-                        <li class="expense-chart__item">
-                            <p class="expense-chart__day-label"><abbr title="Monday">mon</abbr></p>
-                            <div class="expense-chart__column"></div>
-                            <p class="expense-chart__price-label"></p>
+                    <ul class="expenses-chart">
+                        <li class="expenses-chart__item">
+                            <p class="expenses-chart__day-label"><abbr title="Monday">mon</abbr></p>
+                            <div class="expenses-chart__column"></div>
+                            <p class="expenses-chart__amount-label">$17.45</p>
                         </li>
-                        <li class="expense-chart__item">
-                            <p class="expense-chart__day-label"><abbr title="Tuesday">tue</abbr></p>
-                            <div class="expense-chart__column"></div>
-                            <p class="expense-chart__price-label"></p>
+                        <li class="expenses-chart__item">
+                            <p class="expenses-chart__day-label"><abbr title="Tuesday">tue</abbr></p>
+                            <div class="expenses-chart__column"></div>
+                            <p class="expenses-chart__amount-label">$17.45</p>
                         </li>
-                        <li class="expense-chart__item">
-                            <p class="expense-chart__day-label"><abbr title="Wednesday">wed</abbr></p>
-                            <div class="expense-chart__column"></div>
-                            <p class="expense-chart__price-label"></p>
+                        <li class="expenses-chart__item"
+                            data-current>
+                            <p class="expenses-chart__day-label"><abbr title="Wednesday">wed</abbr></p>
+                            <div class="expenses-chart__column"></div>
+                            <p class="expenses-chart__amount-label">$17.45</p>
                         </li>
-                        <li class="expense-chart__item">
-                            <p class="expense-chart__day-label"><abbr title="Thursday">thu</abbr></p>
-                            <div class="expense-chart__column"></div>
-                            <p class="expense-chart__price-label"></p>
+                        <li class="expenses-chart__item">
+                            <p class="expenses-chart__day-label"><abbr title="Thursday">thu</abbr></p>
+                            <div class="expenses-chart__column"></div>
+                            <p class="expenses-chart__amount-label">$17.45</p>
                         </li>
-                        <li class="expense-chart__item">
-                            <p class="expense-chart__day-label"><abbr title="Friday">fri</abbr></p>
-                            <div class="expense-chart__column"></div>
-                            <p class="expense-chart__price-label"></p>
+                        <li class="expenses-chart__item">
+                            <p class="expenses-chart__day-label"><abbr title="Friday">fri</abbr></p>
+                            <div class="expenses-chart__column"></div>
+                            <p class="expenses-chart__amount-label">$17.45</p>
                         </li>
-                        <li class="expense-chart__item">
-                            <p class="expense-chart__day-label"><abbr title="Saturday">sat</abbr></p>
-                            <div class="expense-chart__column"></div>
-                            <p class="expense-chart__price-label"></p>
+                        <li class="expenses-chart__item">
+                            <p class="expenses-chart__day-label"><abbr title="Saturday">sat</abbr></p>
+                            <div class="expenses-chart__column"></div>
+                            <p class="expenses-chart__amount-label">$17.45</p>
                         </li>
-                        <li class="expense-chart__item">
-                            <p class="expense-chart__day-label"><abbr title="Sunday">sun</abbr></p>
-                            <div class="expense-chart__column"></div>
-                            <p class="expense-chart__price-label"></p>
+                        <li class="expenses-chart__item">
+                            <p class="expenses-chart__day-label"><abbr title="Sunday">sun</abbr></p>
+                            <div class="expenses-chart__column"></div>
+                            <p class="expenses-chart__amount-label">$17.45</p>
                         </li>
                     </ul>
                 </section>
-                <hr>
-                <footer class="expense-data__footer">
-                    <p class="expense-data__month-total">Total this month <span>$478.33</span></p>
-                    <p class="expense-data__increase"><span>+2.4%</span> from last month</p>
+                <hr class="divider">
+                <footer class="expenses-data__footer">
+                    <p class="expenses-data__month-total">Total this month <span>$478.33</span></p>
+                    <p class="expenses-data__increase"><span>+2.4%</span> from last month</p>
                 </footer>
             </article>
         </section>
     </main>
-
-
-
 
     <script src="./dist/js/main.min.js"></script>
 </body>

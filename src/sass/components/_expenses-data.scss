@@ -1,0 +1,47 @@
+.expenses-data {
+	padding-block: clamp(3rem, 6vw, 4.4rem);
+	padding-inline: clamp(2rem, 6vw, 4rem);
+	background-color: var(--clr-neutral-200);
+	border-radius: var(--border-radius, var(--borr-300));
+
+	&__heading {
+		margin-bottom: clamp(5.4rem, 7.5vw, 7rem);
+		font-size: var(--fz-500);
+		font-weight: var(--fw-700);
+		line-height: 1;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		color: var(--clr-neutral-600);
+	}
+
+	&__month-total,
+	&__increase {
+		display: inline-flex;
+		flex-direction: column;
+		line-height: 1;
+
+		& > span {
+			font-weight: var(--fw-700);
+			color: var(--clr-neutral-700);
+		}
+	}
+
+	&__month-total {
+		& > span {
+			margin-top: 1.2rem;
+			font-size: var(--fz-700);
+		}
+	}
+
+	&__increase {
+		text-align: right;
+		align-self: flex-end;
+
+		& > span {
+			margin-bottom: 0.25em;
+		}
+	}
+}
