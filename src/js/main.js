@@ -71,7 +71,6 @@ const insertData = (data) => {
 		dayLabel.innerText = expense.day;
 		dayLabel.title = expense.fullDay;
 		dayLabel.dataset.dayLabel = expense.day;
-		dayLabel.setAttribute('aria-label', expense.fullDay);
 		/* set bars height and data */
 		chartBar.dataset.bar = expense.height;
 		chartBar.style.height = `${expense.height}${BAR_HEIGHT_UNIT}`;
