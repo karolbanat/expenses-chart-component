@@ -9,8 +9,8 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 ## Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHubPages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt/hub/expenses-chart-component-E2RJF0dJQh)
+- Live Site URL: [GitHubPages Site](https://karolbanat.github.io/expenses-chart-component/)
 
 ## Author
 
