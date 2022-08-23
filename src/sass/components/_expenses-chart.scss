@@ -2,7 +2,8 @@
 	display: grid;
 	grid-auto-flow: column;
 	grid-auto-columns: 1fr;
-	gap: clamp(1.2rem, 7vw - 2rem, 1.8rem);
+	align-items: end; //to make amount label appear at the top of the bar
+	gap: clamp(1rem, 7vw - 2rem, 1.8rem);
 
 	&__item {
 		position: relative;
@@ -22,36 +23,45 @@
 	}
 
 	&__amount-label {
+		--scale: 0;
+		--opacity: 0;
+		--y-translation: calc(-100% - 0.8rem);
+		--x-translation: -50%;
 		position: absolute;
 		top: 0;
-		transform: translateY(calc(-100% - 0.8rem));
+		left: 50%;
+		transform: translateY(var(--y-translation)) translateX(var(--x-translation)) scale(var(--scale));
 		padding: 0.5em 0.5em;
 		line-height: 1;
 		color: var(--clr-neutral-200);
 		background-color: var(--clr-neutral-700);
 		border-radius: var(--borr-200);
-		opacity: 0;
+		opacity: var(--opacity);
+		transition: transform 0.35s ease;
 	}
 
-	&__column {
+	&__bar {
 		--bg-color: var(--clr-primary-400);
 
 		width: 100%;
-		height: 15rem;
+		min-height: 0.5rem; // even if the amount is 0, set the height to .5rem
 		background-color: var(--bg-color);
 		border-radius: var(--borr-200);
 		cursor: pointer;
+		animation: grow-up 1.25s ease-out;
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			opacity: 0.5;
 		}
 	}
 
-	&__column:is(:hover, :focus) + &__amount-label {
-		opacity: 1;
+	&__bar:is(:hover, :focus-visible) + &__amount-label {
+		--scale: 1;
+		--opacity: 1;
 	}
 
-	&__item[data-current] &__column {
+	&__item[data-current] &__bar {
 		--bg-color: var(--clr-accent-400);
 	}
 }
